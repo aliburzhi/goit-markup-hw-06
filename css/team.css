@@ -36,6 +36,14 @@
     }
 }
 
+@media (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+        row-gap: 0;
+    }
+}
+
+
 .team-list-item {
     display: flex;
     flex-direction: column;
