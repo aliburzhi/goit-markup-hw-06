@@ -1,16 +1,68 @@
 .hero-section {
     background-color: #2e2f42;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 72px 0;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    url("../images/hero-bg-mob.jpg");
+}
+
+@media (min-resolution: 192dpi) {
+    .hero-section {
+        background-image:  linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-bg-mob@2x.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 112px 0;
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg-tablet.jpg");
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg-tablet@2x.jpg");
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-section {
+        padding: 188px 0;
+        max-width: 1440px;
+          background-image: linear-gradient(
+                  rgba(46, 47, 66, 0.7),
+                   rgba(46, 47, 66, 0.7)
+            ),
+          url("../images/hero-bg.jpg");
+    }
+}
+
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg@2x.jpg");
+    }
 }
 
 .hero-container {
@@ -18,7 +70,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-button {
@@ -35,7 +86,20 @@
 
 .title {
     color: #fff;
-    margin-bottom: 48px;
-    max-width: 496px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 72px;
 }
+
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 36px;
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .title {
+        margin-bottom: 48px;
+    }
+}
+
