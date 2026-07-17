@@ -12,8 +12,8 @@
 
 @media (min-width: 768px) {
     .header-container {
-        padding: 0;
-        justify-content: normal;
+        justify-content: space-between;
+        padding: 0 16px;
     }
 }
 

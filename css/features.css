@@ -23,6 +23,14 @@
     }
 }
 
+@media (min-width: 1158px) {
+    .features-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
 .features-subtitle {
     color: #2E2F42;
     font-weight: 700;
