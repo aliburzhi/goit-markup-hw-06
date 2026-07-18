@@ -83,7 +83,6 @@
 }
 
 .mobile-menu-list-item {
-
 }
 
 .mobile-menu-link {
@@ -91,6 +90,7 @@
     line-height: 40px;
     letter-spacing: 0.02em;
     font-weight: 700;
+    color: #2e2f42;
 }
 
 .mobile-menu-address-list {
@@ -99,6 +99,23 @@
     gap: 24px;
     margin-bottom: 48px;
 }
+
+.mobile-menu-address-list li:first-child a {
+    color: #4d5ae5;
+}
+
+.mobile-menu-address-list li:last-child a {
+    color: #434455;
+}
+
+.mobile-menu-address-list-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+
 
 .mobile-social-list {
     display: flex;
